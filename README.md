@@ -109,3 +109,7 @@ You can also follow and contact the PayPal Accessibility team on Twitter: [@PayP
 ## Copyright and License
 Copyright 2014, eBay Software Foundation under [the BSD license](LICENSE.md).
 
+##Links to known bugs
+In FF setting textTrack.mode to hidden will not hide/remove the text tracks visibility
+[mozilla bug](https://bugzilla.mozilla.org/show_bug.cgi?id=981280#c6)
+
