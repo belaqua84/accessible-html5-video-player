@@ -536,7 +536,12 @@ function InitPxVideo(options) {
 							var records = [], 
 								record,
 								req = xhr.responseText;
-							records = req.split('\n\n');
+							if(obj.browserName === "IE"){
+								records = req.split('\r\n\r\n'); //This might only be required locally...or on the intranet...?
+							}
+							else {
+								records = req.split('\n\n');
+							}
 							for (var r=0; r < records.length; r++) {
 								record = records[r];
 								obj.captions[r] = [];
